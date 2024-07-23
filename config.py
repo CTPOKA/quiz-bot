@@ -1,2 +1,0 @@
-DB_NAME = 'quiz_bot.db'
-API_TOKEN = '7174290654:AAFARNGLY-sIAuebwUFVpMx2-hdiG26zK10'
