@@ -71,7 +71,8 @@ async def cmd_start(message: types.Message):
     await message.bot.send_photo(
         chat_id=message.chat.id,
         photo=url,
-        caption="Добро пожаловать в квиз!"
+        caption="Добро пожаловать в квиз!",
+        reply_markup=main_menu
     )
 
 
