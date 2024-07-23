@@ -66,7 +66,13 @@ async def wrong_answer(callback: types.CallbackQuery):
 
 @router.message(Command("start"))
 async def cmd_start(message: types.Message):
-    await message.answer("Добро пожаловать в квиз!", reply_markup=main_menu)
+    
+    url = "https://storage.yandexcloud.net/bucket-z0001/quiz_bot_icon.png"
+    await message.bot.send_photo(
+        chat_id=message.chat.id,
+        photo=url,
+        caption="Добро пожаловать в квиз!"
+    )
 
 
 @router.message(F.text=="Начать игру")
